@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+/* Variables CSS para los temas */
+:root {
+    /* Variables del tema Tech Professional (Default) */
+    --color-primary: #027aff;
+    --color-secondary: #7b61ff;
+    --color-accent: #4ce1b6;
+    --color-background: #f7f9fc;
+    --color-text: #222b45;
+    --color-text-secondary: #8f9bb3;
+    --color-border: rgba(143, 155, 179, 0.15);
+    --card-background: white;
+    --nav-background: rgba(247, 249, 252, 0.8);
+
+    /* Configuración de fuentes */
+    --font-family: "Inter", sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Espaciados y tamaños */
+    --border-radius-sm: 0.375rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 0.75rem;
+    --border-radius-xl: 1rem;
+    --border-radius-2xl: 1.5rem;
+
+    /* Transiciones */
+    --transition-normal: 300ms ease-in-out;
+    --transition-fast: 150ms ease-in-out;
+}
+
+/* Variables para el modo oscuro del tema Tech Professional */
+.theme-tech-professional.dark {
+    --color-primary: #027aff;
+    --color-secondary: #7b61ff;
+    --color-accent: #4ce1b6;
+    --color-background: #222b45;
+    --color-text: #f7f9fc;
+    --color-text-secondary: #c5cee0;
+    --color-border: rgba(143, 155, 179, 0.1);
+    --card-background: #2e3a59;
+    --nav-background: rgba(34, 43, 69, 0.8);
+}
+
+/* Definiciones para tema Minimalista */
+.theme-minimalist {
+    --color-primary: #000000;
+    --color-secondary: #333333;
+    --color-accent: #666666;
+    --color-background: #ffffff;
+    --color-text: #000000;
+    --color-text-secondary: #666666;
+    --color-border: rgba(0, 0, 0, 0.1);
+    --card-background: #f8f8f8;
+    --nav-background: rgba(255, 255, 255, 0.9);
+}
+
+/* Modo oscuro para tema Minimalista */
+.theme-minimalist.dark {
+    --color-primary: #ffffff;
+    --color-secondary: #cccccc;
+    --color-accent: #999999;
+    --color-background: #121212;
+    --color-text: #ffffff;
+    --color-text-secondary: #aaaaaa;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --card-background: #1e1e1e;
+    --nav-background: rgba(18, 18, 18, 0.9);
+}
+
+/* Definiciones para tema Retro 90s */
+.theme-retro90s {
+    --color-primary: #ff5b5b;
+    --color-secondary: #ffd166;
+    --color-accent: #06d6a0;
+    --color-background: #f8f9fa;
+    --color-text: #4b4453;
+    --color-text-secondary: #8b7e99;
+    --color-border: rgba(75, 68, 83, 0.2);
+    --card-background: #ffffff;
+    --nav-background: rgba(248, 249, 250, 0.9);
+
+    /* Fuente específica para el tema retro */
+    --font-family: "VT323", "Courier New", monospace;
+}
+
+/* Modo oscuro para tema Retro 90s */
+.theme-retro90s.dark {
+    --color-primary: #ff5b5b;
+    --color-secondary: #ffd166;
+    --color-accent: #06d6a0;
+    --color-background: #2f2640;
+    --color-text: #f8f9fa;
+    --color-text-secondary: #cfc6dc;
+    --color-border: rgba(248, 249, 250, 0.2);
+    --card-background: #4b4453;
+    --nav-background: rgba(47, 38, 64, 0.9);
+}
+
+/* Clases CSS personalizadas para colores del tema actual */
+.bg-theme-primary {
+    background-color: var(--color-primary);
+}
+.bg-theme-secondary {
+    background-color: var(--color-secondary);
+}
+.bg-theme-accent {
+    background-color: var(--color-accent);
+}
+.bg-theme-background {
+    background-color: var(--color-background);
+}
+.bg-theme-card {
+    background-color: var(--card-background);
+}
+
+.text-theme-primary {
+    color: var(--color-primary);
+}
+.text-theme-secondary {
+    color: var(--color-secondary);
+}
+.text-theme-accent {
+    color: var(--color-accent);
+}
+.text-theme-default {
+    color: var(--color-text);
+}
+.text-theme-muted {
+    color: var(--color-text-secondary);
+}
+
+.border-theme {
+    border-color: var(--color-border);
+}
+
+/* Transiciones para cambios de tema */
+.theme-transition {
+    transition: color var(--transition-normal),
+        background-color var(--transition-normal),
+        border-color var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+/* Estilos base del proyecto */
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    transition: background-color var(--transition-normal),
+        color var(--transition-normal);
+}
+
+/* Estilos específicos para el tema Retro 90s */
+.theme-retro90s .retro-border {
+    border: 2px solid var(--color-primary);
+    box-shadow: 4px 4px 0 var(--color-secondary);
+}
+
+.theme-retro90s .retro-text {
+    text-shadow: 2px 2px 0 var(--color-secondary);
+}
+
+/* Animación de carga */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
