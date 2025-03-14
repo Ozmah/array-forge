@@ -2,13 +2,16 @@ import React from "react";
 import { useTheme } from "../context/ThemeContext";
 
 const Hero = ({ viewport, setActiveSection }) => {
-    const { currentTheme, darkMode } = useTheme();
+    const { currentTheme } = useTheme();
+
+    console.log(currentTheme.endsWith("-dark"));
+    console.log(currentTheme);
 
     return (
         <section className="py-12 mb-16">
             <div
                 className={`flex ${
-                    viewport === "mobile" ? "flex-col-reverse" : "flex-row"
+                    viewport === "mobile" ? "flex-col" : "flex-row"
                 } items-center gap-12`}
             >
                 <div
@@ -18,10 +21,14 @@ const Hero = ({ viewport, setActiveSection }) => {
                 >
                     <div
                         className={`
-              inline-block px-4 py-1 rounded-full text-sm font-medium mb-4
-              bg-theme-primary bg-opacity-10 text-theme-primary
-              ${currentTheme === "retro90s" ? "retro-border" : ""}
-            `}
+  inline-block px-4 py-1 rounded-full text-sm font-medium mb-4
+  ${
+      currentTheme.endsWith("-dark")
+          ? "bg-primary/50 text-white"
+          : "bg-primary/20 text-theme-primary"
+  }
+  ${currentTheme === "retro90s" ? "retro-border" : ""}
+`}
                     >
                         Desarrollador Full Stack
                     </div>

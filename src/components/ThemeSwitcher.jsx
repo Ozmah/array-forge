@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useTheme, THEMES } from "../context/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
+import { THEMES } from "../context/themeData";
 
 const ThemeSwitcher = () => {
     const { currentTheme, darkMode, changeTheme, toggleDarkMode } = useTheme();
@@ -7,9 +8,12 @@ const ThemeSwitcher = () => {
 
     // Mapeo de temas a nombres legibles
     const themeNames = {
-        [THEMES.TECH_PROFESSIONAL]: "Tech Professional",
-        [THEMES.MINIMALIST]: "Minimalista",
-        [THEMES.RETRO_90S]: "Retro 90s",
+        [THEMES.TECH_PROFESSIONAL]: "tp",
+        [THEMES.TECH_PROFESSIONAL_D]: "tp-dark",
+        [THEMES.MINIMALIST]: "mm",
+        [THEMES.MINIMALIST_D]: "mm-dark",
+        [THEMES.RETRO_90S]: "r9",
+        [THEMES.RETRO_90S_D]: "r9-dark",
     };
 
     // Funciones para manejar el menú

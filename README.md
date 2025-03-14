@@ -13,8 +13,11 @@ This project is a professional web portfolio with a multiple theme system, desig
 ## Available Themes
 
 1. **Tech Professional**: Modern style with blue and purple tones
-2. **Minimalist**: Clean and elegant design in black and white
-3. **Retro 90s**: Inspired by 90s aesthetics
+2. **Tech Professional Dark**
+3. **Minimalist**: Clean and elegant design in black and white
+4. **Minimalist Dark**
+5. **Retro 90s**: Inspired by 90s aesthetics
+6. **Retro 90s Dark**
 
 ## Technologies Used
 
@@ -49,38 +52,12 @@ src/
 
 The system uses CSS Variables combined with Tailwind utility classes and React Context API:
 
-1. Each theme defines its CSS variables in `index.css`
-2. When changing themes, classes are applied to the `body` element
-3. Components use classes like `bg-theme-primary` that reference the current theme's variables
+1. Each theme defines its CSS variables in `index.css` inside the @theme directive
+2. When changing themes, `data-theme` attributes are applied to the `body` element
+3. Components use utility classes like `bg-primary` that reference the current theme's variables (Several fixes needed still)
 4. TailwindCSS is configured to use these variables
 5. Theme state is maintained in a React context
 6. Preferences are saved in localStorage
-
-## Installation and Usage
-
-1. Clone the repository
-
-    ```bash
-    git clone https://github.com/your-username/multi-theme-portfolio.git
-    cd multi-theme-portfolio
-    ```
-
-2. Install dependencies
-
-    ```bash
-    npm install
-    ```
-
-3. Start development server
-
-    ```bash
-    npm run dev
-    ```
-
-4. For production
-    ```bash
-    npm run build
-    ```
 
 ## Customization
 
