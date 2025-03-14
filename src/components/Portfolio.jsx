@@ -36,7 +36,7 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <div className="min-h-screen theme-transition bg-theme-background text-theme-default">
+        <div className="min-h-screen theme-transition bg-background text-theme-default">
             <Header
                 activeSection={activeSection}
                 setActiveSection={setActiveSection}

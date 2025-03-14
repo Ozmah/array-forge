@@ -48,7 +48,7 @@ const Skills = ({ viewport }) => {
     return (
         <section className="mb-20">
             <div className="text-center mb-12">
-                <div className="text-sm font-medium text-theme-primary">
+                <div className="text-sm font-medium text-primary">
                     EXPERIENCIA
                 </div>
                 <h2
@@ -64,14 +64,14 @@ const Skills = ({ viewport }) => {
             <div
                 className={`
           rounded-2xl overflow-hidden
-          bg-theme-card border border-theme
+          bg-theme-card border bg-border
           ${currentTheme === "retro90s" ? "retro-border" : ""}
         `}
                 style={{
                     boxShadow: "0 10px 25px rgba(0, 0, 0, 0.05)",
                 }}
             >
-                <div className="px-8 py-6 border-b border-theme">
+                <div className="px-8 py-6 border-b bg-border">
                     <div className="flex gap-4 overflow-x-auto pb-2 sm:justify-center">
                         {[
                             "Todos",
@@ -90,8 +90,8 @@ const Skills = ({ viewport }) => {
                   px-4 py-2 text-sm rounded-lg whitespace-nowrap
                   ${
                       category.toLowerCase() === activeCategory
-                          ? "bg-theme-primary text-white"
-                          : "bg-theme-primary bg-opacity-10 text-theme-primary"
+                          ? "bg-primary text-white"
+                          : "bg-primary/10 text-primary"
                   }
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}

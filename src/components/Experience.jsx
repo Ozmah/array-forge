@@ -33,7 +33,7 @@ const Experience = ({ viewport }) => {
         <section className="mb-20">
             <div className="flex items-end justify-between mb-8">
                 <div>
-                    <div className="text-sm font-medium text-theme-primary">
+                    <div className="text-sm font-medium text-primary">
                         TIMELINE
                     </div>
                     <h2
@@ -50,7 +50,7 @@ const Experience = ({ viewport }) => {
             <div
                 className={`
           rounded-2xl overflow-hidden relative
-          bg-theme-card border border-theme
+          bg-theme-card border bg-border
           ${currentTheme === "retro90s" ? "retro-border" : ""}
         `}
                 style={{
@@ -95,7 +95,7 @@ const Experience = ({ viewport }) => {
                                         }}
                                     ></div>
 
-                                    <div className="font-bold text-theme-primary">
+                                    <div className="font-bold text-primary">
                                         {exp.period}
                                     </div>
                                     <div className="text-sm text-theme-muted">
@@ -123,7 +123,7 @@ const Experience = ({ viewport }) => {
                                             }}
                                         ></div>
                                         <div>
-                                            <div className="font-bold text-theme-primary">
+                                            <div className="font-bold text-primary">
                                                 {exp.period}
                                             </div>
                                             <div className="text-sm text-theme-muted">

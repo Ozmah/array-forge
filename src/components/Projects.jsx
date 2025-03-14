@@ -45,7 +45,7 @@ const Projects = ({ viewport }) => {
         <section className="mb-20">
             <div className="flex items-end justify-between mb-8">
                 <div>
-                    <div className="text-sm font-medium text-theme-primary">
+                    <div className="text-sm font-medium text-primary">
                         PORTAFOLIO
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold text-theme-default">
@@ -56,7 +56,7 @@ const Projects = ({ viewport }) => {
                     <button
                         className={`
               text-sm font-medium px-4 py-2 rounded-lg transition-all
-              bg-theme-primary bg-opacity-10 text-theme-primary
+              bg-primary/10 text-primary
               ${currentTheme === "retro90s" ? "retro-border" : ""}
             `}
                     >
@@ -79,7 +79,7 @@ const Projects = ({ viewport }) => {
                         key={proyecto.id}
                         className={`
               rounded-xl overflow-hidden transition-all hover:shadow-lg theme-transition
-              bg-theme-card border border-theme
+              bg-theme-card border bg-border
               ${currentTheme === "retro90s" ? "retro-border" : ""}
             `}
                         style={{
@@ -134,7 +134,7 @@ const Projects = ({ viewport }) => {
                                         key={index}
                                         className={`
                       px-3 py-1 text-xs rounded-full
-                      bg-theme-primary bg-opacity-10 text-theme-primary
+                      bg-primary/10 text-primary
                       ${currentTheme === "retro90s" ? "retro-border" : ""}
                     `}
                                     >
@@ -146,7 +146,7 @@ const Projects = ({ viewport }) => {
                             <button
                                 className={`
                   mt-2 px-4 py-2 rounded-lg text-sm font-medium transition-all
-                  bg-theme-primary text-white
+                  bg-primary text-white
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                             >

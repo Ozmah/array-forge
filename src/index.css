@@ -107,9 +107,9 @@
 }
 
 /* Clases CSS personalizadas para colores del tema actual */
-.bg-theme-primary {
+/* .bg-theme-primary {
     background-color: var(--color-primary);
-}
+} */
 .bg-theme-secondary {
     background-color: var(--color-secondary);
 }

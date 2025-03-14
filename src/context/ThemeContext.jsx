@@ -6,7 +6,7 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
     // Estado para el tema actual y el modo (claro/oscuro)
-    const [currentTheme, setCurrentTheme] = useState(THEMES.RETRO_90S_D);
+    const [currentTheme, setCurrentTheme] = useState(THEMES.MINIMALIST_D.value);
 
     // Recuperar preferencias guardadas al cargar
     useEffect(() => {

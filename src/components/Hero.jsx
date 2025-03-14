@@ -25,7 +25,7 @@ const Hero = ({ viewport, setActiveSection }) => {
   ${
       currentTheme.endsWith("-dark")
           ? "bg-primary/50 text-white"
-          : "bg-primary/20 text-theme-primary"
+          : "bg-primary/20 text-primary"
   }
   ${currentTheme === "retro90s" ? "retro-border" : ""}
 `}
@@ -40,7 +40,7 @@ const Hero = ({ viewport, setActiveSection }) => {
           `}
                     >
                         Soy Gabriel Alegría,{" "}
-                        <span className="text-theme-primary">
+                        <span className="text-primary">
                             desarrollador web profesional
                         </span>
                     </h1>
@@ -60,7 +60,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                             onClick={() => setActiveSection("projects")}
                             className={`
                 px-6 py-3 rounded-lg font-medium transition-all hover:shadow-lg
-                bg-theme-primary text-white 
+                bg-primary text-white 
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
@@ -69,7 +69,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                         <button
                             className={`
                 px-6 py-3 rounded-lg font-medium border-2 transition-all hover:shadow-lg
-                border-theme-primary text-theme-primary bg-transparent
+                bg-border-primary text-primary bg-transparent
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
@@ -104,7 +104,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                             )}
                         </div>
                         <div className="ml-4 flex items-center text-sm text-theme-muted">
-                            <span className="font-medium mr-1 text-theme-primary">
+                            <span className="font-medium mr-1 text-primary">
                                 18+
                             </span>{" "}
                             años de experiencia
@@ -133,11 +133,11 @@ const Hero = ({ viewport, setActiveSection }) => {
                         <div
                             className={`
                 relative rounded-3xl overflow-hidden
-                bg-theme-card border border-theme
+                bg-theme-card border bg-border
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
-                            <div className="px-6 py-4 border-b border-theme">
+                            <div className="px-6 py-4 border-b bg-border">
                                 <div className="flex gap-2">
                                     <div className="w-3 h-3 rounded-full bg-red-400"></div>
                                     <div className="w-3 h-3 rounded-full bg-yellow-400"></div>

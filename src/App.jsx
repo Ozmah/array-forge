@@ -15,10 +15,10 @@ function App() {
     return (
         <ThemeProvider>
             {loading ? (
-                <div className="flex items-center justify-center min-h-screen bg-theme-background theme-transition">
+                <div className="flex items-center justify-center min-h-screen bg-background theme-transition">
                     <div className="flex flex-col items-center">
                         <svg
-                            className="animate-spin h-12 w-12 text-theme-primary"
+                            className="animate-spin h-12 w-12 text-primary"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"

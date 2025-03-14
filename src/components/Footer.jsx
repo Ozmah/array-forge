@@ -7,7 +7,7 @@ const Footer = ({ viewport }) => {
     return (
         <footer
             className={`
-        bg-theme-background border-t border-theme theme-transition
+        bg-background border-t bg-border theme-transition
         ${currentTheme === "retro90s" ? "retro-border" : ""}
       `}
             style={{
@@ -29,7 +29,7 @@ const Footer = ({ viewport }) => {
                             <div
                                 className={`
                   flex items-center justify-center h-10 w-10 rounded-lg
-                  bg-theme-primary text-white font-bold text-lg
+                  bg-primary text-white font-bold text-lg
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                                 style={{
@@ -40,7 +40,7 @@ const Footer = ({ viewport }) => {
                             </div>
                             <span
                                 className={`
-                font-bold text-xl text-theme-primary
+                font-bold text-xl text-primary
                 ${currentTheme === "retro90s" ? "retro-text" : ""}
               `}
                             >
@@ -56,7 +56,7 @@ const Footer = ({ viewport }) => {
                         <div
                             className={`
                 inline-block px-4 py-2 rounded-lg text-sm font-medium
-                bg-theme-primary bg-opacity-10 text-theme-primary
+                bg-primary/10 text-primary
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
@@ -128,14 +128,14 @@ const Footer = ({ viewport }) => {
                                 type="email"
                                 className={`
                   px-4 py-2 rounded-l-lg flex-1 theme-transition
-                  bg-theme-card border border-theme border-r-0 text-theme-default
+                  bg-theme-card border bg-border border-r-0 text-theme-default
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                                 placeholder="tu@email.com"
                             />
                             <button
                                 className={`
-                  px-4 py-2 rounded-r-lg bg-theme-primary text-white
+                  px-4 py-2 rounded-r-lg bg-primary text-white
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                             >
@@ -151,7 +151,7 @@ const Footer = ({ viewport }) => {
                                         href="#"
                                         className={`
                     w-8 h-8 rounded-full flex items-center justify-center text-xs
-                    bg-theme-primary bg-opacity-10 text-theme-primary
+                    bg-primary/10 text-primary
                     ${currentTheme === "retro90s" ? "retro-border" : ""}
                   `}
                                     >

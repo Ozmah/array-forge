@@ -13,7 +13,7 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
         <nav
             className={`
         fixed w-full z-40 transition-all duration-300 theme-transition
-        border-b border-theme
+        border-b bg-border
         ${currentTheme === "retro90s" ? "retro-border" : ""}
       `}
             style={{
@@ -27,14 +27,14 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                         className={`
               flex items-center justify-center h-10 w-10 rounded-lg
               ${currentTheme === "retro90s" ? "retro-border" : ""}
-              bg-theme-primary text-white font-bold text-lg
+              bg-primary text-white font-bold text-lg
             `}
                     >
                         GA
                     </div>
                     <span
                         className={`
-            font-bold text-xl text-theme-primary
+            font-bold text-xl text-primary
             ${currentTheme === "retro90s" ? "retro-text" : ""}
           `}
                     >
@@ -54,8 +54,8 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                     ${activeSection === item.toLowerCase() ? "font-medium" : ""}
                     ${
                         activeSection === item.toLowerCase()
-                            ? "bg-theme-primary bg-opacity-10 text-theme-primary"
-                            : "text-theme-default hover:bg-theme-background"
+                            ? "bg-primary/10 text-primary"
+                            : "text-theme-default hover:bg-background"
                     }
                   `}
                                     onClick={() =>
@@ -77,23 +77,23 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                         <ThemeSwitcher />
 
                         <button
-                            className="p-2 rounded-lg text-theme-primary"
+                            className="p-2 rounded-lg text-primary"
                             onClick={() => setMenuOpen(!menuOpen)}
                             aria-label={menuOpen ? "Close menu" : "Open menu"}
                         >
                             <div className="w-6 h-5 flex flex-col justify-between">
                                 <span
-                                    className={`block h-0.5 rounded transition-all duration-300 transform bg-theme-primary
+                                    className={`block h-0.5 rounded transition-all duration-300 transform bg-primary
                     ${menuOpen ? "rotate-45 translate-y-2" : ""}
                   `}
                                 ></span>
                                 <span
-                                    className={`block h-0.5 rounded transition-all duration-300 bg-theme-primary
+                                    className={`block h-0.5 rounded transition-all duration-300 bg-primary
                     ${menuOpen ? "opacity-0" : "opacity-100"}
                   `}
                                 ></span>
                                 <span
-                                    className={`block h-0.5 rounded transition-all duration-300 transform bg-theme-primary
+                                    className={`block h-0.5 rounded transition-all duration-300 transform bg-primary
                     ${menuOpen ? "-rotate-45 -translate-y-2" : ""}
                   `}
                                 ></span>
@@ -121,7 +121,7 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                   ${activeSection === item.toLowerCase() ? "font-medium" : ""}
                   ${
                       activeSection === item.toLowerCase()
-                          ? "bg-theme-primary bg-opacity-10 text-theme-primary"
+                          ? "bg-primary/10 text-primary"
                           : "text-theme-default"
                   }
                 `}
