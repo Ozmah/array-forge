@@ -13,13 +13,9 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
         <nav
             className={`
         fixed w-full z-40 transition-all duration-300 theme-transition
-        border-b border-border
+        border-b border-border bg-nav-background/10
         ${currentTheme === "retro90s" ? "retro-border" : ""}
       `}
-            style={{
-                backgroundColor: "var(--color-nav-background)",
-                backdropFilter: "blur(10px)",
-            }}
         >
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                 <div className="flex items-center gap-3">
