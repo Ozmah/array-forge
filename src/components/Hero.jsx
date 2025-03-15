@@ -45,7 +45,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                         </span>
                     </h1>
 
-                    <p className="text-lg mb-8 text-theme-muted">
+                    <p className="text-lg mb-8 text-text-secondary">
                         Transformando ideas en soluciones digitales innovadoras.
                         Con experiencia en tecnologías web modernas, enfocado en
                         crear experiencias de usuario excepcionales.
@@ -103,7 +103,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                                 )
                             )}
                         </div>
-                        <div className="ml-4 flex items-center text-sm text-theme-muted">
+                        <div className="ml-4 flex items-center text-sm text-text-secondary">
                             <span className="font-medium mr-1 text-primary">
                                 18+
                             </span>{" "}
@@ -146,18 +146,18 @@ const Hero = ({ viewport, setActiveSection }) => {
                             </div>
 
                             <div className="p-6">
-                                <div className="space-y-3 font-mono text-sm mb-4">
+                                <div className="space-y-3 font-mono text-base mb-4">
                                     <div>
-                                        <span className="text-theme-accent">
+                                        <span className="text-accent">
                                             const
                                         </span>{" "}
-                                        <span className="text-theme-secondary">
+                                        <span className="text-secondary">
                                             developer
                                         </span>{" "}
                                         = {`{`}
                                     </div>
                                     <div className="pl-4">
-                                        <span className="text-theme-secondary">
+                                        <span className="text-secondary">
                                             name
                                         </span>
                                         :{" "}
@@ -167,7 +167,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                                         ,
                                     </div>
                                     <div className="pl-4">
-                                        <span className="text-theme-secondary">
+                                        <span className="text-secondary">
                                             skills
                                         </span>
                                         : [
@@ -189,7 +189,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                                         ],
                                     </div>
                                     <div className="pl-4">
-                                        <span className="text-theme-secondary">
+                                        <span className="text-secondary">
                                             experience
                                         </span>
                                         :{" "}
@@ -199,7 +199,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                                         ,
                                     </div>
                                     <div className="pl-4">
-                                        <span className="text-theme-secondary">
+                                        <span className="text-secondary">
                                             available
                                         </span>
                                         :{" "}
@@ -225,13 +225,13 @@ const Hero = ({ viewport, setActiveSection }) => {
                                         }}
                                     ></div>
                                 </div>
-                                <div className="text-xs text-theme-muted">
+                                <div className="text-sm text-text-secondary">
                                     Actualmente aprendiendo{" "}
-                                    <span className="font-medium text-theme-accent">
+                                    <span className="font-medium text-accent">
                                         Docker
                                     </span>{" "}
                                     y{" "}
-                                    <span className="font-medium text-theme-accent">
+                                    <span className="font-medium text-accent ">
                                         React
                                     </span>
                                 </div>
@@ -240,6 +240,10 @@ const Hero = ({ viewport, setActiveSection }) => {
                     </div>
                 </div>
             </div>
+
+            {/* <div className="w-full h-lvh bg-primary text-accent rounded-3xl mt-8">
+                Esto es una prueba
+            </div> */}
         </section>
     );
 };

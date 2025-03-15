@@ -4,7 +4,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 const Header = ({ activeSection, setActiveSection, viewport }) => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const { currentTheme, darkMode } = useTheme();
+    const { currentTheme } = useTheme();
 
     // Navegación
     const navItems = ["Home", "Projects", "Skills", "Experience", "Contact"];
@@ -55,7 +55,7 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                     ${
                         activeSection === item.toLowerCase()
                             ? "bg-primary/10 text-primary"
-                            : "text-theme-default hover:bg-background"
+                            : "text-text hover:bg-background"
                     }
                   `}
                                     onClick={() =>
@@ -92,9 +92,10 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                     ${menuOpen ? "opacity-0" : "opacity-100"}
                   `}
                                 ></span>
+                                {/* Cuidado: -translate-y-[0.625rem]" podría escalar mal */}
                                 <span
                                     className={`block h-0.5 rounded transition-all duration-300 transform bg-primary
-                    ${menuOpen ? "-rotate-45 -translate-y-2" : ""}
+                    ${menuOpen ? "-rotate-45 -translate-y-[0.625rem]" : ""}
                   `}
                                 ></span>
                             </div>
@@ -122,7 +123,7 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                   ${
                       activeSection === item.toLowerCase()
                           ? "bg-primary/10 text-primary"
-                          : "text-theme-default"
+                          : "text-text"
                   }
                 `}
                                 onClick={() => {

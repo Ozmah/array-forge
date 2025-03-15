@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "../context/ThemeContext";
 
 const Footer = ({ viewport }) => {
-    const { currentTheme, darkMode } = useTheme();
+    const { currentTheme } = useTheme();
 
     return (
         <footer
@@ -11,7 +11,7 @@ const Footer = ({ viewport }) => {
         ${currentTheme === "retro90s" ? "retro-border" : ""}
       `}
             style={{
-                backgroundColor: darkMode
+                backgroundColor: currentTheme.endsWith("-dark")
                     ? "rgba(26, 35, 58, 0.7)"
                     : "rgba(247, 249, 252, 0.7)",
             }}
@@ -48,7 +48,7 @@ const Footer = ({ viewport }) => {
                             </span>
                         </div>
 
-                        <p className="mb-6 text-theme-muted">
+                        <p className="mb-6 text-text-secondary">
                             Un portafolio profesional para mostrar proyectos y
                             habilidades de desarrollo de software.
                         </p>
@@ -65,7 +65,7 @@ const Footer = ({ viewport }) => {
                     </div>
 
                     <div className="col-span-1">
-                        <h4 className="font-bold text-lg mb-4 text-theme-default">
+                        <h4 className="font-bold text-lg mb-4 text-text">
                             Enlaces
                         </h4>
                         <ul className="space-y-2">
@@ -80,7 +80,7 @@ const Footer = ({ viewport }) => {
                                 <li key={item}>
                                     <a
                                         href="#"
-                                        className="block py-1.5 hover:translate-x-1 transition-transform text-theme-muted"
+                                        className="block py-1.5 hover:translate-x-1 transition-transform text-text-secondary"
                                     >
                                         {item}
                                     </a>
@@ -90,7 +90,7 @@ const Footer = ({ viewport }) => {
                     </div>
 
                     <div className="col-span-1">
-                        <h4 className="font-bold text-lg mb-4 text-theme-default">
+                        <h4 className="font-bold text-lg mb-4 text-text">
                             Servicios
                         </h4>
                         <ul className="space-y-2">
@@ -105,7 +105,7 @@ const Footer = ({ viewport }) => {
                                 <li key={item}>
                                     <a
                                         href="#"
-                                        className="block py-1.5 hover:translate-x-1 transition-transform text-theme-muted"
+                                        className="block py-1.5 hover:translate-x-1 transition-transform text-text-secondary"
                                     >
                                         {item}
                                     </a>
@@ -115,10 +115,10 @@ const Footer = ({ viewport }) => {
                     </div>
 
                     <div className="col-span-1">
-                        <h4 className="font-bold text-lg mb-4 text-theme-default">
+                        <h4 className="font-bold text-lg mb-4 text-text">
                             Newsletter
                         </h4>
-                        <p className="mb-4 text-theme-muted">
+                        <p className="mb-4 text-text-secondary">
                             Suscríbete para recibir actualizaciones sobre
                             proyectos y artículos.
                         </p>
@@ -128,7 +128,7 @@ const Footer = ({ viewport }) => {
                                 type="email"
                                 className={`
                   px-4 py-2 rounded-l-lg flex-1 theme-transition
-                  bg-theme-card border bg-border border-r-0 text-theme-default
+                  bg-theme-card border bg-border border-r-0 text-text
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                                 placeholder="tu@email.com"
@@ -164,7 +164,7 @@ const Footer = ({ viewport }) => {
                 </div>
 
                 <div
-                    className="mt-12 pt-6 text-center text-sm text-theme-muted"
+                    className="mt-12 pt-6 text-center text-sm text-text-secondary"
                     style={{
                         borderTop: `1px solid var(--color-border)`,
                     }}

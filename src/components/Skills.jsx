@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 
 const Skills = ({ viewport }) => {
-    const { currentTheme, darkMode } = useTheme();
+    const { currentTheme } = useTheme();
     const [activeCategory, setActiveCategory] = useState("todos");
 
     // Determinar color basado en el nivel de habilidad
@@ -53,7 +53,7 @@ const Skills = ({ viewport }) => {
                 </div>
                 <h2
                     className={`
-          text-2xl md:text-3xl font-bold text-theme-default
+          text-2xl md:text-3xl font-bold text-text
           ${currentTheme === "retro90s" ? "retro-text" : ""}
         `}
                 >
@@ -113,7 +113,7 @@ const Skills = ({ viewport }) => {
                         {filteredSkills.map((skill, index) => (
                             <div key={index} className="space-y-2">
                                 <div className="flex justify-between items-center">
-                                    <span className="font-medium text-theme-default">
+                                    <span className="font-medium text-text">
                                         {skill.name}
                                     </span>
                                     <span
@@ -129,7 +129,9 @@ const Skills = ({ viewport }) => {
                                 <div
                                     className="w-full h-2.5 rounded-full"
                                     style={{
-                                        backgroundColor: darkMode
+                                        backgroundColor: currentTheme.endsWith(
+                                            "-dark"
+                                        )
                                             ? "rgba(143, 155, 179, 0.1)"
                                             : "rgba(143, 155, 179, 0.15)",
                                     }}
@@ -145,16 +147,17 @@ const Skills = ({ viewport }) => {
                                     ></div>
                                 </div>
 
-                                <div className="text-xs text-theme-muted">
+                                <div className="text-xs text-text-secondary">
                                     <span
                                         className={`
                       inline-block px-2 py-1 rounded-md
                       ${currentTheme === "retro90s" ? "retro-border" : ""}
                     `}
                                         style={{
-                                            backgroundColor: darkMode
-                                                ? "rgba(143, 155, 179, 0.15)"
-                                                : "rgba(143, 155, 179, 0.1)",
+                                            backgroundColor:
+                                                currentTheme.endsWith("-dark")
+                                                    ? "rgba(143, 155, 179, 0.15)"
+                                                    : "rgba(143, 155, 179, 0.1)",
                                         }}
                                     >
                                         {getCategoryLabel(skill.category)}

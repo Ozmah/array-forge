@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 
 const Projects = ({ viewport }) => {
-    const { currentTheme, darkMode } = useTheme();
+    const { currentTheme } = useTheme();
 
     // Simulación de proyectos para el portafolio
     const proyectos = [
@@ -48,7 +48,7 @@ const Projects = ({ viewport }) => {
                     <div className="text-sm font-medium text-primary">
                         PORTAFOLIO
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-theme-default">
+                    <h2 className="text-2xl md:text-3xl font-bold text-text">
                         Proyectos Destacados
                     </h2>
                 </div>
@@ -121,10 +121,10 @@ const Projects = ({ viewport }) => {
                         </div>
 
                         <div className="p-6">
-                            <h3 className="text-xl font-bold mb-2 text-theme-default">
+                            <h3 className="text-xl font-bold mb-2 text-text">
                                 {proyecto.title}
                             </h3>
-                            <p className="mb-4 text-theme-muted">
+                            <p className="mb-4 text-text-secondary">
                                 {proyecto.description}
                             </p>
 

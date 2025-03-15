@@ -57,9 +57,7 @@ const ThemeSwitcher = () => {
                 >
                     <div className="p-3 border-b bg-border">
                         <div className="flex justify-between items-center">
-                            <span className="font-medium text-theme-default">
-                                Tema
-                            </span>
+                            <span className="font-medium text-text">Tema</span>
                         </div>
                     </div>
 
@@ -73,7 +71,7 @@ const ThemeSwitcher = () => {
                   ${
                       currentTheme === theme.value
                           ? "bg-primary text-white"
-                          : "text-theme-default hover:bg-background"
+                          : "text-text hover:bg-background"
                   }
                 `}
                             >

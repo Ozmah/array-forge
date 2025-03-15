@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 const Portfolio = () => {
     // Acceder al contexto del tema
-    const { currentTheme, darkMode } = useTheme();
+    const { currentTheme } = useTheme();
 
     // Estado para la sección activa
     const [activeSection, setActiveSection] = useState("home");
@@ -36,7 +36,7 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <div className="min-h-screen theme-transition bg-background text-theme-default">
+        <div className="min-h-screen theme-transition bg-background text-text">
             <Header
                 activeSection={activeSection}
                 setActiveSection={setActiveSection}
@@ -44,11 +44,20 @@ const Portfolio = () => {
             />
 
             <main className="container mx-auto px-4 pt-24 pb-16">
-                <Hero viewport={viewport} setActiveSection={setActiveSection} />
-                <Projects viewport={viewport} />
-                <Skills viewport={viewport} />
-                <Experience viewport={viewport} />
-                <Contact viewport={viewport} />
+                {activeSection === "home" && (
+                    <Hero
+                        viewport={viewport}
+                        setActiveSection={setActiveSection}
+                    />
+                )}
+                {activeSection === "projects" && (
+                    <Projects viewport={viewport} />
+                )}
+                {activeSection === "skills" && <Skills viewport={viewport} />}
+                {activeSection === "experience" && (
+                    <Experience viewport={viewport} />
+                )}
+                {activeSection === "contact" && <Contact viewport={viewport} />}
             </main>
 
             <Footer viewport={viewport} />

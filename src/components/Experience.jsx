@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "../context/ThemeContext";
 
 const Experience = ({ viewport }) => {
-    const { currentTheme, darkMode } = useTheme();
+    const { currentTheme } = useTheme();
 
     // Experiencia profesional
     const experiences = [
@@ -38,7 +38,7 @@ const Experience = ({ viewport }) => {
                     </div>
                     <h2
                         className={`
-            text-2xl md:text-3xl font-bold text-theme-default
+            text-2xl md:text-3xl font-bold text-text
             ${currentTheme === "retro90s" ? "retro-text" : ""}
           `}
                     >
@@ -62,7 +62,7 @@ const Experience = ({ viewport }) => {
                     <div
                         className="absolute left-1/4 top-0 bottom-0 w-px"
                         style={{
-                            backgroundColor: darkMode
+                            backgroundColor: currentTheme.endsWith("-dark")
                                 ? "rgba(2, 122, 255, 0.2)"
                                 : "rgba(2, 122, 255, 0.3)",
                         }}
@@ -98,7 +98,7 @@ const Experience = ({ viewport }) => {
                                     <div className="font-bold text-primary">
                                         {exp.period}
                                     </div>
-                                    <div className="text-sm text-theme-muted">
+                                    <div className="text-sm text-text-secondary">
                                         {exp.company}
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@ const Experience = ({ viewport }) => {
                                             <div className="font-bold text-primary">
                                                 {exp.period}
                                             </div>
-                                            <div className="text-sm text-theme-muted">
+                                            <div className="text-sm text-text-secondary">
                                                 {exp.company}
                                             </div>
                                         </div>
@@ -139,17 +139,19 @@ const Experience = ({ viewport }) => {
                     ${currentTheme === "retro90s" ? "retro-border" : ""}
                   `}
                                     style={{
-                                        backgroundColor: darkMode
+                                        backgroundColor: currentTheme.endsWith(
+                                            "-dark"
+                                        )
                                             ? "rgba(34, 43, 69, 0.7)"
                                             : "rgba(247, 249, 252, 0.7)",
                                         boxShadow:
                                             "0 4px 12px rgba(0, 0, 0, 0.03)",
                                     }}
                                 >
-                                    <h3 className="text-xl font-bold mb-2 text-theme-default">
+                                    <h3 className="text-xl font-bold mb-2 text-text">
                                         {exp.role}
                                     </h3>
-                                    <p className="text-theme-muted">
+                                    <p className="text-text-secondary">
                                         {exp.description}
                                     </p>
                                 </div>
