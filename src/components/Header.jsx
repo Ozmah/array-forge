@@ -13,11 +13,11 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
         <nav
             className={`
         fixed w-full z-40 transition-all duration-300 theme-transition
-        border-b bg-border
+        border-b border-border
         ${currentTheme === "retro90s" ? "retro-border" : ""}
       `}
             style={{
-                backgroundColor: "var(--nav-background)",
+                backgroundColor: "var(--color-nav-background)",
                 backdropFilter: "blur(10px)",
             }}
         >
@@ -109,7 +109,7 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                 <div
                     className="absolute w-full py-3 shadow-lg transition-all duration-300 theme-transition"
                     style={{
-                        backgroundColor: "var(--nav-background)",
+                        backgroundColor: "var(--color-nav-background)",
                         backdropFilter: "blur(10px)",
                     }}
                 >

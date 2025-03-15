@@ -69,7 +69,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                         <button
                             className={`
                 px-6 py-3 rounded-lg font-medium border-2 transition-all hover:shadow-lg
-                bg-border-primary text-primary bg-transparent
+                border-border-primary text-primary bg-transparent
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
@@ -133,11 +133,11 @@ const Hero = ({ viewport, setActiveSection }) => {
                         <div
                             className={`
                 relative rounded-3xl overflow-hidden
-                bg-background border bg-border
+                bg-background border border-border
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
-                            <div className="px-6 py-4 border-b bg-border">
+                            <div className="px-6 py-4 border-b border-border">
                                 <div className="flex gap-2">
                                     <div className="w-3 h-3 rounded-full bg-red-400"></div>
                                     <div className="w-3 h-3 rounded-full bg-yellow-400"></div>

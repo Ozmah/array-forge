@@ -51,10 +51,11 @@ const ThemeSwitcher = () => {
                 <div
                     className="
             absolute right-0 mt-2 w-48 rounded-lg shadow-lg overflow-hidden
-            bg-background border theme-transition
+            bg-background border border-border
+            theme-transition
           "
                 >
-                    <div className="p-3 border-b bg-border">
+                    <div className="p-3 border-b border-border">
                         <div className="flex justify-between items-center">
                             <span className="font-medium text-text">Tema</span>
                         </div>

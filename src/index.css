@@ -9,8 +9,8 @@
     --color-text: #222b45;
     --color-text-secondary: #8f9bb3;
     --color-border: rgba(143, 155, 179, 0.15);
-    --card-background: white;
-    --nav-background: rgba(247, 249, 252, 0.8);
+    --color-card-background: white;
+    --color-nav-background: rgba(247, 249, 252, 0.8);
 }
 
 @layer base {
@@ -23,8 +23,8 @@
         --color-text: #f7f9fc;
         --color-text-secondary: #c5cee0;
         --color-border: rgba(143, 155, 179, 0.1);
-        --card-background: #2e3a59;
-        --nav-background: rgba(34, 43, 69, 0.8);
+        --color-card-background: #2e3a59;
+        --color-nav-background: rgba(34, 43, 69, 0.8);
     }
 
     [data-theme="mm"] {
@@ -36,8 +36,8 @@
         --color-text: #000000;
         --color-text-secondary: #666666;
         --color-border: rgba(0, 0, 0, 0.1);
-        --card-background: #f8f8f8;
-        --nav-background: rgba(255, 255, 255, 0.9);
+        --color-card-background: #f8f8f8;
+        --color-nav-background: rgba(255, 255, 255, 0.9);
     }
 
     [data-theme="mm-dark"] {
@@ -49,8 +49,8 @@
         --color-text: #ffffff;
         --color-text-secondary: #aaaaaa;
         --color-border: rgba(255, 255, 255, 0.1);
-        --card-background: #1e1e1e;
-        --nav-background: rgba(18, 18, 18, 0.9);
+        --color-card-background: #1e1e1e;
+        --color-nav-background: rgba(18, 18, 18, 0.9);
     }
 
     [data-theme="r9"] {
@@ -62,8 +62,8 @@
         --color-text: #4b4453;
         --color-text-secondary: #8b7e99;
         --color-border: rgba(75, 68, 83, 0.2);
-        --card-background: #ffffff;
-        --nav-background: rgba(248, 249, 250, 0.9);
+        --color-card-background: #ffffff;
+        --color-nav-background: rgba(248, 249, 250, 0.9);
 
         /* Fuente específica para el tema retro */
         --font-family: "VT323", "Courier New", monospace;
@@ -78,7 +78,7 @@
         --color-text: #f8f9fa;
         --color-text-secondary: #cfc6dc;
         --color-border: rgba(248, 249, 250, 0.2);
-        --card-background: #4b4453;
+        --color-card-background: #4b4453;
         --nav-background: rgba(47, 38, 64, 0.9);
 
         /* Fuente específica para el tema retro */

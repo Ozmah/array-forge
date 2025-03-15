@@ -7,7 +7,7 @@ const Footer = ({ viewport }) => {
     return (
         <footer
             className={`
-        bg-background border-t bg-border theme-transition
+        bg-background border-t border-border theme-transition
         ${currentTheme === "retro90s" ? "retro-border" : ""}
       `}
             style={{
@@ -128,7 +128,7 @@ const Footer = ({ viewport }) => {
                                 type="email"
                                 className={`
                   px-4 py-2 rounded-l-lg flex-1 theme-transition
-                  bg-background border bg-border border-r-0 text-text
+                  bg-background border border-border border-r-0 text-text
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                                 placeholder="tu@email.com"

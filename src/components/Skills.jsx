@@ -64,14 +64,14 @@ const Skills = ({ viewport }) => {
             <div
                 className={`
           rounded-2xl overflow-hidden
-          bg-background border bg-border
+          bg-background border border-border
           ${currentTheme === "retro90s" ? "retro-border" : ""}
         `}
                 style={{
                     boxShadow: "0 10px 25px rgba(0, 0, 0, 0.05)",
                 }}
             >
-                <div className="px-8 py-6 border-b bg-border">
+                <div className="px-8 py-6 border-b border-border">
                     <div className="flex gap-4 overflow-x-auto pb-2 sm:justify-center">
                         {[
                             "Todos",
