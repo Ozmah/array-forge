@@ -11,6 +11,10 @@
     --color-border: rgba(143, 155, 179, 0.15);
     --color-card-background: white;
     --color-nav-background: rgba(247, 249, 252, 0.8);
+    --color-dropdown-bg: white;
+    --color-dropdown-hover: rgba(2, 122, 255, 0.08);
+    --color-dropdown-border: rgba(143, 155, 179, 0.2);
+    --color-primary-contrast: white;
 }
 
 @layer base {
@@ -25,6 +29,10 @@
         --color-border: rgba(143, 155, 179, 0.1);
         --color-card-background: #2e3a59;
         --color-nav-background: rgba(34, 43, 69, 0.8);
+        --color-dropdown-bg: #2e3a59;
+        --color-dropdown-hover: rgba(2, 122, 255, 0.15);
+        --color-dropdown-border: rgba(143, 155, 179, 0.15);
+        --color-primary-contrast: white;
     }
 
     [data-theme="mm"] {
@@ -38,6 +46,10 @@
         --color-border: rgba(0, 0, 0, 0.1);
         --color-card-background: #f8f8f8;
         --color-nav-background: rgba(255, 255, 255, 0.9);
+        --color-dropdown-bg: white;
+        --color-dropdown-hover: rgba(0, 0, 0, 0.08);
+        --color-dropdown-border: rgba(0, 0, 0, 0.15);
+        --color-primary-contrast: white;
     }
 
     [data-theme="mm-dark"] {
@@ -51,6 +63,10 @@
         --color-border: rgba(255, 255, 255, 0.1);
         --color-card-background: #1e1e1e;
         --color-nav-background: rgba(18, 18, 18, 0.9);
+        --color-dropdown-bg: #1e1e1e;
+        --color-dropdown-hover: rgba(255, 255, 255, 0.1);
+        --color-dropdown-border: rgba(255, 255, 255, 0.15);
+        --color-primary-contrast: black;
     }
 
     [data-theme="r9"] {
@@ -64,6 +80,10 @@
         --color-border: rgba(75, 68, 83, 0.2);
         --color-card-background: #ffffff;
         --color-nav-background: rgba(248, 249, 250, 0.9);
+        --color-dropdown-bg: white;
+        --color-dropdown-hover: rgba(255, 91, 91, 0.1);
+        --color-dropdown-border: rgba(75, 68, 83, 0.25);
+        --color-primary-contrast: white;
 
         /* Fuente específica para el tema retro */
         --font-family: "VT323", "Courier New", monospace;
@@ -80,6 +100,10 @@
         --color-border: rgba(248, 249, 250, 0.2);
         --color-card-background: #4b4453;
         --nav-background: rgba(47, 38, 64, 0.9);
+        --color-dropdown-bg: #4b4453;
+        --color-dropdown-hover: rgba(255, 91, 91, 0.15);
+        --color-dropdown-border: rgba(248, 249, 250, 0.25);
+        --color-primary-contrast: white;
 
         /* Fuente específica para el tema retro */
         --font-family: "VT323", "Courier New", monospace;

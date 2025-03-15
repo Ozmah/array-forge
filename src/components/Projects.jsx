@@ -146,7 +146,7 @@ const Projects = ({ viewport }) => {
                             <button
                                 className={`
                   mt-2 px-4 py-2 rounded-lg text-sm font-medium transition-all
-                  bg-primary text-white
+                  bg-primary text-primary-contrast
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                             >

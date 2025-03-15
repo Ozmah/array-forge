@@ -135,7 +135,7 @@ const Footer = ({ viewport }) => {
                             />
                             <button
                                 className={`
-                  px-4 py-2 rounded-r-lg bg-primary text-white
+                  px-4 py-2 rounded-r-lg bg-primary text-primary-contrast
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                             >

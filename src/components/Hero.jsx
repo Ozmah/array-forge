@@ -60,7 +60,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                             onClick={() => setActiveSection("projects")}
                             className={`
                 px-6 py-3 rounded-lg font-medium transition-all hover:shadow-lg
-                bg-primary text-white 
+                bg-primary text-primary-contrast 
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >

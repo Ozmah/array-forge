@@ -51,17 +51,11 @@ const ThemeSwitcher = () => {
                 <div
                     className="
             absolute right-0 mt-2 w-48 rounded-lg shadow-lg overflow-hidden
-            bg-background border border-border
+            bg-dropdown-bg border border-dropdown-border
             theme-transition
           "
                 >
-                    <div className="p-3 border-b border-border">
-                        <div className="flex justify-between items-center">
-                            <span className="font-medium text-text">Tema</span>
-                        </div>
-                    </div>
-
-                    <div className="py-1">
+                    <div>
                         {Object.values(THEMES).map((theme) => (
                             <button
                                 key={theme.value}
@@ -70,8 +64,8 @@ const ThemeSwitcher = () => {
                   w-full text-left px-4 py-2 theme-transition
                   ${
                       currentTheme === theme.value
-                          ? "bg-primary text-white"
-                          : "text-text hover:bg-background"
+                          ? "bg-primary text-primary-contrast"
+                          : "text-text hover:bg-dropdown-hover"
                   }
                 `}
                             >

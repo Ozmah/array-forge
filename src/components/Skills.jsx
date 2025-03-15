@@ -90,7 +90,7 @@ const Skills = ({ viewport }) => {
                   px-4 py-2 text-sm rounded-lg whitespace-nowrap
                   ${
                       category.toLowerCase() === activeCategory
-                          ? "bg-primary text-white"
+                          ? "bg-primary text-primary-contrast"
                           : "bg-primary/10 text-primary"
                   }
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
