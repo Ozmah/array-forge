@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "./context/ThemeContext";
-import Portfolio from "./components/Portfolio";
+import Home from "./components/Home";
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -43,7 +43,7 @@ function App() {
                     </div>
                 </div>
             ) : (
-                <Portfolio />
+                <Home />
             )}
         </ThemeProvider>
     );

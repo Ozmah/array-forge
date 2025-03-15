@@ -7,7 +7,7 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
     const { currentTheme } = useTheme();
 
     // Navegación
-    const navItems = ["Home", "Projects", "Skills", "Experience", "Contact"];
+    const navItems = ["Home", "Components", "Contact"];
 
     return (
         <nav

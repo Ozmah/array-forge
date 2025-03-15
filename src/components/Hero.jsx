@@ -4,9 +4,6 @@ import { useTheme } from "../context/ThemeContext";
 const Hero = ({ viewport, setActiveSection }) => {
     const { currentTheme } = useTheme();
 
-    console.log(currentTheme.endsWith("-dark"));
-    console.log(currentTheme);
-
     return (
         <section className="py-12 mb-16">
             <div
@@ -21,16 +18,16 @@ const Hero = ({ viewport, setActiveSection }) => {
                 >
                     <div
                         className={`
-  inline-block px-4 py-1 rounded-full text-sm font-medium mb-4
-  ${
-      currentTheme.endsWith("-dark")
-          ? "bg-primary/50 text-white"
-          : "bg-primary/20 text-primary"
-  }
-  ${currentTheme === "retro90s" ? "retro-border" : ""}
-`}
+              inline-block px-4 py-1 rounded-full text-sm font-medium mb-4
+              ${
+                  currentTheme.endsWith("-dark")
+                      ? "bg-primary/50 text-white"
+                      : "bg-primary/20 text-primary"
+              }
+              ${currentTheme === "retro90s" ? "retro-border" : ""}
+            `}
                     >
-                        Desarrollador Full Stack
+                        Senior Full Stack Developer
                     </div>
 
                     <h1
@@ -39,17 +36,34 @@ const Hero = ({ viewport, setActiveSection }) => {
             ${currentTheme === "retro90s" ? "retro-text" : ""}
           `}
                     >
-                        Soy Gabriel Alegría,{" "}
-                        <span className="text-primary">
-                            desarrollador web profesional
-                        </span>
+                        Building{" "}
+                        <span className="text-primary">digital solutions</span>{" "}
+                        that deliver results
                     </h1>
 
-                    <p className="text-lg mb-8 text-text-secondary">
-                        Transformando ideas en soluciones digitales innovadoras.
-                        Con experiencia en tecnologías web modernas, enfocado en
-                        crear experiencias de usuario excepcionales.
+                    <p className="text-lg mb-6 text-text-secondary">
+                        With +15 years of web development experience, I create
+                        custom technical components that solve complex problems.
+                        PHP specialist with strong Frontend and Backend skills.
                     </p>
+
+                    <div className="flex flex-wrap gap-3 mb-6">
+                        <span className="px-3 py-1 rounded-full text-sm bg-primary/10 text-primary">
+                            PHP
+                        </span>
+                        <span className="px-3 py-1 rounded-full text-sm bg-secondary/10 text-secondary">
+                            React
+                        </span>
+                        <span className="px-3 py-1 rounded-full text-sm bg-accent/10 text-accent">
+                            WordPress
+                        </span>
+                        <span className="px-3 py-1 rounded-full text-sm bg-primary/10 text-primary">
+                            Laravel
+                        </span>
+                        <span className="px-3 py-1 rounded-full text-sm bg-secondary/10 text-secondary">
+                            AI Integration
+                        </span>
+                    </div>
 
                     <div
                         className={`flex gap-4 ${
@@ -57,57 +71,37 @@ const Hero = ({ viewport, setActiveSection }) => {
                         }`}
                     >
                         <button
-                            onClick={() => setActiveSection("projects")}
                             className={`
                 px-6 py-3 rounded-lg font-medium transition-all hover:shadow-lg
                 bg-primary text-primary-contrast 
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
-                            Ver proyectos
+                            Download CV
                         </button>
                         <button
+                            onClick={() => setActiveSection("projects")}
                             className={`
                 px-6 py-3 rounded-lg font-medium border-2 transition-all hover:shadow-lg
-                border-border-primary text-primary bg-transparent
+                border-primary text-primary bg-transparent
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
-                            Descargar CV
+                            View Technical Components
                         </button>
                     </div>
 
-                    <div
-                        className={`flex mt-8 ${
-                            viewport === "mobile" ? "justify-center" : ""
-                        }`}
-                    >
-                        <div className="flex -space-x-2">
-                            {["#027AFF", "#7B61FF", "#4CE1B6"].map(
-                                (color, i) => (
-                                    <div
-                                        key={i}
-                                        className={`
-                    w-10 h-10 rounded-full border-2 flex items-center justify-center
-                    text-white font-bold
-                    ${currentTheme === "retro90s" ? "retro-border" : ""}
-                  `}
-                                        style={{
-                                            backgroundColor: color,
-                                            borderColor:
-                                                "var(--color-background)",
-                                        }}
-                                    >
-                                        {String.fromCharCode(65 + i)}
-                                    </div>
-                                )
-                            )}
-                        </div>
-                        <div className="ml-4 flex items-center text-sm text-text-secondary">
-                            <span className="font-medium mr-1 text-primary">
-                                18+
-                            </span>{" "}
-                            años de experiencia
+                    <div className="mt-8 p-3 rounded-lg bg-background border border-border">
+                        <div className="flex items-center">
+                            <div className="mr-3 text-primary text-xl">⚡</div>
+                            <p className="text-sm text-text-secondary">
+                                <span className="font-medium text-text">
+                                    Looking for a technically versatile
+                                    developer?
+                                </span>{" "}
+                                Check out my components section to see my work
+                                with APIs, AI integrations and custom solutions.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -146,104 +140,94 @@ const Hero = ({ viewport, setActiveSection }) => {
                             </div>
 
                             <div className="p-6">
-                                <div className="space-y-3 font-mono text-base mb-4">
-                                    <div>
-                                        <span className="text-accent">
-                                            const
-                                        </span>{" "}
-                                        <span className="text-secondary">
-                                            developer
-                                        </span>{" "}
-                                        = {`{`}
+                                <div className="font-mono text-base mb-4">
+                                    <div className="flex items-center mb-3">
+                                        <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-2 font-bold">
+                                            F
+                                        </div>
+                                        <div className="font-medium">
+                                            Frontend Development
+                                        </div>
                                     </div>
-                                    <div className="pl-4">
-                                        <span className="text-secondary">
-                                            name
-                                        </span>
-                                        :{" "}
-                                        <span className="text-orange-400">
-                                            'Gabriel'
-                                        </span>
-                                        ,
+                                    <div className="pl-10 mb-4">
+                                        <div className="h-2 w-full bg-gray-200 rounded-full mb-2">
+                                            <div
+                                                className="h-full rounded-full bg-primary"
+                                                style={{ width: "85%" }}
+                                            ></div>
+                                        </div>
+                                        <div className="text-xs text-text-secondary">
+                                            React, JavaScript, CSS, UI/UX
+                                        </div>
                                     </div>
-                                    <div className="pl-4">
-                                        <span className="text-secondary">
-                                            skills
-                                        </span>
-                                        : [
-                                        <span className="text-orange-400">
-                                            'PHP'
-                                        </span>
-                                        ,{" "}
-                                        <span className="text-orange-400">
-                                            'React'
-                                        </span>
-                                        ,{" "}
-                                        <span className="text-orange-400">
-                                            'Vite'
-                                        </span>
-                                        ,{" "}
-                                        <span className="text-orange-400">
-                                            'JS'
-                                        </span>
-                                        ],
-                                    </div>
-                                    <div className="pl-4">
-                                        <span className="text-secondary">
-                                            experience
-                                        </span>
-                                        :{" "}
-                                        <span className="text-green-400">
-                                            18
-                                        </span>
-                                        ,
-                                    </div>
-                                    <div className="pl-4">
-                                        <span className="text-secondary">
-                                            available
-                                        </span>
-                                        :{" "}
-                                        <span className="text-blue-400">
-                                            true
-                                        </span>
-                                    </div>
-                                    <div>{`}`};</div>
-                                </div>
 
-                                <div
-                                    className="w-full h-2 rounded-full overflow-hidden mb-2"
-                                    style={{
-                                        backgroundColor:
-                                            "rgba(143, 155, 179, 0.15)",
-                                    }}
-                                >
-                                    <div
-                                        className="h-full rounded-full"
-                                        style={{
-                                            width: "75%",
-                                            background: `linear-gradient(to right, var(--color-primary), var(--color-secondary))`,
-                                        }}
-                                    ></div>
-                                </div>
-                                <div className="text-sm text-text-secondary">
-                                    Actualmente aprendiendo{" "}
-                                    <span className="font-medium text-accent">
-                                        Docker
-                                    </span>{" "}
-                                    y{" "}
-                                    <span className="font-medium text-accent ">
-                                        React
-                                    </span>
+                                    <div className="flex items-center mb-3">
+                                        <div className="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center mr-2 font-bold">
+                                            B
+                                        </div>
+                                        <div className="font-medium">
+                                            Backend Development
+                                        </div>
+                                    </div>
+                                    <div className="pl-10 mb-4">
+                                        <div className="h-2 w-full bg-gray-200 rounded-full mb-2">
+                                            <div
+                                                className="h-full rounded-full bg-secondary"
+                                                style={{ width: "95%" }}
+                                            ></div>
+                                        </div>
+                                        <div className="text-xs text-text-secondary">
+                                            PHP, Laravel, MySQL, API Design
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center mb-3">
+                                        <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center mr-2 font-bold">
+                                            W
+                                        </div>
+                                        <div className="font-medium">
+                                            WordPress & CMS
+                                        </div>
+                                    </div>
+                                    <div className="pl-10 mb-4">
+                                        <div className="h-2 w-full bg-gray-200 rounded-full mb-2">
+                                            <div
+                                                className="h-full rounded-full bg-accent"
+                                                style={{ width: "90%" }}
+                                            ></div>
+                                        </div>
+                                        <div className="text-xs text-text-secondary">
+                                            Theme Development, Plugins,
+                                            Customization
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center mb-3">
+                                        <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-2 font-bold">
+                                            A
+                                        </div>
+                                        <div className="font-medium">
+                                            AI Integration
+                                        </div>
+                                    </div>
+                                    <div className="pl-10">
+                                        <div className="h-2 w-full bg-gray-200 rounded-full mb-2">
+                                            <div
+                                                className="h-full rounded-full bg-primary"
+                                                style={{ width: "75%" }}
+                                            ></div>
+                                        </div>
+                                        <div className="text-xs text-text-secondary">
+                                            OpenAI, Claude, LLM APIs, Prompt
+                                            Engineering
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            {/* <div className="w-full h-lvh bg-primary text-accent rounded-3xl mt-8">
-                Esto es una prueba
-            </div> */}
         </section>
     );
 };

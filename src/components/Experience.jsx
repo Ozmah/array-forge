@@ -7,9 +7,9 @@ const Experience = ({ viewport }) => {
     // Experiencia profesional
     const experiences = [
         {
-            role: "Lead Developer",
-            company: "Tech Innovations Inc.",
-            period: "2018 - Presente",
+            role: "Lead PHP Developer",
+            company: "Internet Brands",
+            period: "April 2015 - Presente",
             description:
                 "Liderazgo técnico en desarrollo de soluciones empresariales. Arquitectura de sistemas distribuidos y APIs. Mentorización de equipos de desarrollo.",
         },

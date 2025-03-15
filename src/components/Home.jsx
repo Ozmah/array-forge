@@ -3,12 +3,11 @@ import { useTheme } from "../context/ThemeContext";
 import Header from "./Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
-import Skills from "./Skills";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-const Portfolio = () => {
+const Home = () => {
     // Acceder al contexto del tema
     const { currentTheme } = useTheme();
 
@@ -45,17 +44,16 @@ const Portfolio = () => {
 
             <main className="container mx-auto px-4 pt-24 pb-16">
                 {activeSection === "home" && (
-                    <Hero
-                        viewport={viewport}
-                        setActiveSection={setActiveSection}
-                    />
+                    <React.Fragment>
+                        <Hero
+                            viewport={viewport}
+                            setActiveSection={setActiveSection}
+                        />
+                        <Experience viewport={viewport} />
+                    </React.Fragment>
                 )}
                 {activeSection === "projects" && (
                     <Projects viewport={viewport} />
-                )}
-                {activeSection === "skills" && <Skills viewport={viewport} />}
-                {activeSection === "experience" && (
-                    <Experience viewport={viewport} />
                 )}
                 {activeSection === "contact" && <Contact viewport={viewport} />}
             </main>
@@ -65,4 +63,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Home;
