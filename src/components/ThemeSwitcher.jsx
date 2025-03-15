@@ -51,8 +51,7 @@ const ThemeSwitcher = () => {
                 <div
                     className="
             absolute right-0 mt-2 w-48 rounded-lg shadow-lg overflow-hidden
-            bg-theme-card border bg-border
-            theme-transition
+            bg-background border theme-transition
           "
                 >
                     <div className="p-3 border-b bg-border">

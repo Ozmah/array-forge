@@ -133,7 +133,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                         <div
                             className={`
                 relative rounded-3xl overflow-hidden
-                bg-theme-card border bg-border
+                bg-background border bg-border
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >

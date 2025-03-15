@@ -128,7 +128,7 @@ const Footer = ({ viewport }) => {
                                 type="email"
                                 className={`
                   px-4 py-2 rounded-l-lg flex-1 theme-transition
-                  bg-theme-card border bg-border border-r-0 text-text
+                  bg-background border bg-border border-r-0 text-text
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                                 placeholder="tu@email.com"

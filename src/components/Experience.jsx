@@ -50,7 +50,7 @@ const Experience = ({ viewport }) => {
             <div
                 className={`
           rounded-2xl overflow-hidden relative
-          bg-theme-card border bg-border
+          bg-background border bg-border
           ${currentTheme === "retro90s" ? "retro-border" : ""}
         `}
                 style={{

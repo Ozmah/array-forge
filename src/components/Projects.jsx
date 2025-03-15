@@ -79,7 +79,7 @@ const Projects = ({ viewport }) => {
                         key={proyecto.id}
                         className={`
               rounded-xl overflow-hidden transition-all hover:shadow-lg theme-transition
-              bg-theme-card border bg-border
+              bg-background border bg-border
               ${currentTheme === "retro90s" ? "retro-border" : ""}
             `}
                         style={{
