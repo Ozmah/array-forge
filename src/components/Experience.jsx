@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "./Theme/ThemeContext";
 
 const Experience = ({ viewport }) => {
     const { currentTheme } = useTheme();
@@ -11,21 +11,21 @@ const Experience = ({ viewport }) => {
             company: "Internet Brands",
             period: "April 2015 - Presente",
             description:
-                "Liderazgo técnico en desarrollo de soluciones empresariales. Arquitectura de sistemas distribuidos y APIs. Mentorización de equipos de desarrollo.",
+                "As a Lead Developer at Internet Brands, I have directed multiple responsive web design projects, implementing robust and scalable solutions. My work has focused on development with PHP and frameworks like Laravel, where I have optimized application architectures and designed RESTful APIs for integration with external services. I have led the implementation of modern user interfaces using CSS and JavaScript, always maintaining a balance between functionality and user experience. During my time here, I have mentored development teams, fostering clean code practices and agile methodologies, while maintaining fluid communication with clients to ensure projects met their expectations and technical requirements.",
         },
         {
-            role: "Full Stack Developer",
-            company: "WebSolutions Agency",
-            period: "2014 - 2018",
+            role: "Technical Leader/Senior PHP Developer",
+            company: "Alcatel One Touch",
+            period: "September 2013 - March 2015",
             description:
-                "Desarrollo de aplicaciones web con PHP, Laravel y JavaScript. Implementación de sistemas de comercio electrónico y plataformas SaaS.",
+                "At Alcatel One Touch, I led the development of a complex ERP system designed to manage product lifecycles. Using Symfony 2 as the main framework, I implemented MVC architectures and designed optimized database systems with Doctrine ORM and SQL Server. I developed key system components, including authentication modules, inventory management, and custom administrative dashboards. My work included creating internal APIs to facilitate communication between system modules, as well as implementing responsive user interfaces with Bootstrap, HTML and CSS. This position allowed me to strengthen my technical leadership skills while continuing to deepen my backend development expertise with PHP.",
         },
         {
             role: "PHP Developer",
-            company: "Creative Digital Studio",
-            period: "2010 - 2014",
+            company: "Softtek",
+            period: "January 2011 - May 2013",
             description:
-                "Desarrollo de sitios web corporativos y sistemas CMS personalizados. Integración con APIs de terceros y pasarelas de pago.",
+                "During my time at Softtek, I specialized in developing components for high-security financial applications. I worked extensively with PHP 5 and Zend Framework, designing and implementing SOAP web services for integration with external systems. I developed robust solutions for handling sensitive information, implementing security protocols and optimizing queries in Oracle and MySQL databases. I actively participated in creating web interfaces using HTML, CSS and jQuery, with special attention to usability and user experience. My role also included technical support for applications in production and management of critical requirements for international clients, which allowed me to gain valuable experience in technical communication and client expectation management.",
         },
     ];
 
@@ -42,7 +42,7 @@ const Experience = ({ viewport }) => {
             ${currentTheme === "retro90s" ? "retro-text" : ""}
           `}
                     >
-                        Experiencia Profesional
+                        Professional Experience
                     </h2>
                 </div>
             </div>

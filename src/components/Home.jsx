@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "./Theme/ThemeContext";
 import Header from "./Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
 import Experience from "./Experience";
-import Contact from "./Contact";
+import About from "./About";
 import Footer from "./Footer";
 
 const Home = () => {
@@ -55,7 +55,7 @@ const Home = () => {
                 {activeSection === "projects" && (
                     <Projects viewport={viewport} />
                 )}
-                {activeSection === "contact" && <Contact viewport={viewport} />}
+                {activeSection === "about" && <About viewport={viewport} />}
             </main>
 
             <Footer viewport={viewport} />

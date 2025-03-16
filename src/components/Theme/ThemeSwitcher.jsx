@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useTheme } from "../context/ThemeContext";
-import { THEMES } from "../context/themeData";
+import { useTheme } from "./ThemeContext";
+import { THEMES } from "./themeData";
 
 const ThemeSwitcher = () => {
     const { currentTheme, changeTheme } = useTheme();

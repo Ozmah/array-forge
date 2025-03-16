@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "./Theme/ThemeContext";
 
 const Hero = ({ viewport, setActiveSection }) => {
     const { currentTheme } = useTheme();
@@ -21,7 +21,7 @@ const Hero = ({ viewport, setActiveSection }) => {
               inline-block px-4 py-1 rounded-full text-sm font-medium mb-4
               ${
                   currentTheme.endsWith("-dark")
-                      ? "bg-primary/50 text-white"
+                      ? "bg-primary/50 text-primary-contrast"
                       : "bg-primary/20 text-primary"
               }
               ${currentTheme === "retro90s" ? "retro-border" : ""}
@@ -36,7 +36,7 @@ const Hero = ({ viewport, setActiveSection }) => {
             ${currentTheme === "retro90s" ? "retro-text" : ""}
           `}
                     >
-                        Building{" "}
+                        Gabriel Alegría, building{" "}
                         <span className="text-primary">digital solutions</span>{" "}
                         that deliver results
                     </h1>
@@ -80,7 +80,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                             Download CV
                         </button>
                         <button
-                            onClick={() => setActiveSection("projects")}
+                            onClick={() => setActiveSection("components")}
                             className={`
                 px-6 py-3 rounded-lg font-medium border-2 transition-all hover:shadow-lg
                 border-primary text-primary bg-transparent
@@ -142,7 +142,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                             <div className="p-6">
                                 <div className="font-mono text-base mb-4">
                                     <div className="flex items-center mb-3">
-                                        <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-2 font-bold">
+                                        <div className="w-8 h-8 rounded-full bg-primary text-primary-contrast flex items-center justify-center mr-2 font-bold">
                                             F
                                         </div>
                                         <div className="font-medium">
@@ -162,7 +162,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                                     </div>
 
                                     <div className="flex items-center mb-3">
-                                        <div className="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center mr-2 font-bold">
+                                        <div className="w-8 h-8 rounded-full bg-secondary text-primary-contrast flex items-center justify-center mr-2 font-bold">
                                             B
                                         </div>
                                         <div className="font-medium">
@@ -182,7 +182,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                                     </div>
 
                                     <div className="flex items-center mb-3">
-                                        <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center mr-2 font-bold">
+                                        <div className="w-8 h-8 rounded-full bg-accent text-primary-contrast flex items-center justify-center mr-2 font-bold">
                                             W
                                         </div>
                                         <div className="font-medium">
@@ -203,7 +203,7 @@ const Hero = ({ viewport, setActiveSection }) => {
                                     </div>
 
                                     <div className="flex items-center mb-3">
-                                        <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-2 font-bold">
+                                        <div className="w-8 h-8 rounded-full bg-primary text-primary-contrast flex items-center justify-center mr-2 font-bold">
                                             A
                                         </div>
                                         <div className="font-medium">

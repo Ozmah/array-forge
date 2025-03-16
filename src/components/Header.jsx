@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { useTheme } from "../context/ThemeContext";
-import ThemeSwitcher from "./ThemeSwitcher";
+import { useTheme } from "./Theme/ThemeContext";
+import ThemeSwitcher from "./Theme/ThemeSwitcher";
 
 const Header = ({ activeSection, setActiveSection, viewport }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const { currentTheme } = useTheme();
 
     // Navegación
-    const navItems = ["Home", "Components", "Contact"];
+    const navItems = ["Home", "Components", "About"];
 
     return (
         <nav
@@ -23,7 +23,7 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
                         className={`
               flex items-center justify-center h-10 w-10 rounded-lg
               ${currentTheme === "retro90s" ? "retro-border" : ""}
-              bg-primary text-white font-bold text-lg
+              bg-primary text-primary-contrast font-bold text-lg
             `}
                     >
                         GA

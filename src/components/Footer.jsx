@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "./Theme/ThemeContext";
 
 const Footer = ({ viewport }) => {
     const { currentTheme } = useTheme();
@@ -29,7 +29,7 @@ const Footer = ({ viewport }) => {
                             <div
                                 className={`
                   flex items-center justify-center h-10 w-10 rounded-lg
-                  bg-primary text-white font-bold text-lg
+                  bg-primary text-primary-contrast font-bold text-lg
                   ${currentTheme === "retro90s" ? "retro-border" : ""}
                 `}
                                 style={{
@@ -49,8 +49,8 @@ const Footer = ({ viewport }) => {
                         </div>
 
                         <p className="mb-6 text-text-secondary">
-                            Un portafolio profesional para mostrar proyectos y
-                            habilidades de desarrollo de software.
+                            My professional portfolio, a place to show and
+                            tinker with components.
                         </p>
 
                         <div
@@ -60,7 +60,7 @@ const Footer = ({ viewport }) => {
                 ${currentTheme === "retro90s" ? "retro-border" : ""}
               `}
                         >
-                            Disponible para proyectos
+                            Available for Projects
                         </div>
                     </div>
 
