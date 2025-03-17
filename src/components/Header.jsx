@@ -13,7 +13,7 @@ const Header = ({ activeSection, setActiveSection, viewport }) => {
         <nav
             className={`
         fixed w-full z-40 transition-all duration-300 theme-transition
-        border-b border-border bg-nav-background/10
+        border-b border-border bg-nav-background
         ${currentTheme === "retro90s" ? "retro-border" : ""}
       `}
         >

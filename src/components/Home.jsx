@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useTheme } from "./Theme/ThemeContext";
 import Header from "./Header";
 import Hero from "./Hero";
-import Projects from "./Projects";
 import Experience from "./Experience";
 import About from "./About";
 import Footer from "./Footer";
+import Components from "./Components";
 
 const Home = () => {
     // Acceder al contexto del tema
@@ -52,8 +52,8 @@ const Home = () => {
                         <Experience viewport={viewport} />
                     </React.Fragment>
                 )}
-                {activeSection === "projects" && (
-                    <Projects viewport={viewport} />
+                {activeSection === "components" && (
+                    <Components viewport={viewport} />
                 )}
                 {activeSection === "about" && <About viewport={viewport} />}
             </main>
